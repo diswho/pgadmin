@@ -16,7 +16,7 @@ copy container-id of `postgres` IMAGE `74eae857a27e`
 
 `docker inspect 963ba6fb2bc0`
 
-check `"IPAddress": "172.19.0.4",`
+check `"IPAddress": "172.20.0.2",`
 
 `docker network inspect --format='{{range .IPAM.Config}}{{.Subnet}}{{end}}'  963ba6fb2bc0`
 
