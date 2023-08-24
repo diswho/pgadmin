@@ -1,3 +1,7 @@
+# Note
+
+try to set Ip for container
+
 # Start Docker
 
 `docker-compose up -d`
