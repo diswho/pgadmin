@@ -1,0 +1,97 @@
+"Config": {
+    "Hostname": "8ea3d452af0e",
+    "Domainname": "",
+    "User": "",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+        "5432/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+        "POSTGRES_USER=root",
+        "POSTGRES_PASSWORD=root",
+        "POSTGRES_DB=test_db",
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/15/bin",
+        "GOSU_VERSION=1.16",
+        "LANG=en_US.utf8",
+        "PG_MAJOR=15",
+        "PG_VERSION=15.4-1.pgdg120+1",
+        "PGDATA=/var/lib/postgresql/data"
+    ],
+    "Cmd": [
+        "postgres"
+    ],
+    "Image": "postgres",
+    "Volumes": {
+        "/var/lib/postgresql/data": {}
+    },
+    "WorkingDir": "",
+    "Entrypoint": [
+        "docker-entrypoint.sh"
+    ],
+    "OnBuild": null,
+    "Labels": {
+        "com.docker.compose.config-hash": "737935cc126cf41eed5ed6942ef409c3111e3cc6ca701894561c6f33f1b3a87d",
+        "com.docker.compose.container-number": "1",
+        "com.docker.compose.depends_on": "",
+        "com.docker.compose.image": "sha256:43677b39c446545c6ce30dd8e32d8c0c0acd7c00eac768a834e10018f5e38c32",
+        "com.docker.compose.oneoff": "False",
+        "com.docker.compose.project": "pgadmin",
+        "com.docker.compose.project.config_files": "C:\\Users\\vieng\\Documents\\Docker\\pgadmin\\docker-compose.yml",
+        "com.docker.compose.project.working_dir": "C:\\Users\\vieng\\Documents\\Docker\\pgadmin",
+        "com.docker.compose.service": "db",
+        "com.docker.compose.version": "2.19.1"
+    },
+    "StopSignal": "SIGINT"
+},
+"NetworkSettings": {
+    "Bridge": "",
+    "SandboxID": "27424eb880d7327160240e26ddf9c6fdcb1b47054c24f13adbcf1eecf83908ff",
+    "HairpinMode": false,
+    "LinkLocalIPv6Address": "",
+    "LinkLocalIPv6PrefixLen": 0,
+    "Ports": {
+        "5432/tcp": [
+            {
+                "HostIp": "0.0.0.0",
+                "HostPort": "5432"
+            }
+        ]
+    },
+    "SandboxKey": "/var/run/docker/netns/27424eb880d7",
+    "SecondaryIPAddresses": null,
+    "SecondaryIPv6Addresses": null,
+    "EndpointID": "",
+    "Gateway": "",
+    "GlobalIPv6Address": "",
+    "GlobalIPv6PrefixLen": 0,
+    "IPAddress": "",
+    "IPPrefixLen": 0,
+    "IPv6Gateway": "",
+    "MacAddress": "",
+    "Networks": {
+        "pgadmin_default": {
+            "IPAMConfig": null,
+            "Links": null,
+            "Aliases": [
+                "pg_container",
+                "db",
+                "8ea3d452af0e"
+            ],
+            "NetworkID": "4e7724694a59d8a689ad9f50d2f2eec7ad71127eb8114dbff9943769ad29ec75",
+            "EndpointID": "d88cd3dc4a3616517bbea1135b3098515b39e91114c8f5000bc5231b0ae54e6a",
+            "Gateway": "172.22.0.1",
+            "IPAddress": "172.22.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "MacAddress": "02:42:ac:16:00:02",
+            "DriverOpts": null
+        }
+    }
+}
